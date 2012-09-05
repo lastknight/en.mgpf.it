@@ -16,16 +16,13 @@ use Rack::TryStatic,
     # Legacy files redirection
     use Rack::Rewrite do
       r301 %r{.*}, 'http://en.mgpf.it$&', :if => Proc.new {|rack_env|
-          rack_env['SERVER_NAME'] != 'mgpf.it' && ENV['RACK_ENV'] == 'production'
+          rack_env['SERVER_NAME'] != 'en.mgpf.it' && ENV['RACK_ENV'] == 'production'
       } # Force single domain
       
       # Calendar
       r301 '/articles/', '/archive.html'
       r301 '/videoblog/', '/video.html'
-      r301 '/contatti/', '/chisono.html'
-      r301 '/profile/', '/chisono.html'
       r301 %r{^/(.*)/$}, '/$1' # trailing slash
-      r301 '/chi-sono', '/chisono.html'
       r301 '/rss', '/atom.xml'
       r301 '/feed', '/atom.xml'
       r301 '/feed/rss', '/atom.xml'
