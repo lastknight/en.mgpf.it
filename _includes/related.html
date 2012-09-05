@@ -1,0 +1,6 @@
+<h2>Most recent posts</h2>
+<ul class="posts small">
+	{% for post in site.posts limit:10 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> <!--<i>{{ post.date | date: "%m/%d/%Y" }}--></i></li>
+	{% endfor %}
+</ul>

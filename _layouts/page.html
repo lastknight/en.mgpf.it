@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h2 id="intro">{{ page.title }}</h2>
+<article class="post">
+{{ content }}
+<div class="fb-like" data-href="http://en.mgpf.it/{{ post.url }}"  data-send="true" data-width="640" data-show-faces="false" data-font="lucida grande"></div>
+<time class="signoff" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+  {{ page.date | date: "%m/%d/%Y" }} with the tag:
+	{% for tag in page.tags %}
+		<a href="/tag/{{ tag }}">{{ tag }}</a>
+	{% endfor %}
+</time>
+{% include related.html %}
+</article>
+<div id="disqus_thread"></div>
+{% include comments.html %}

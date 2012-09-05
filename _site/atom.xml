@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Matteo Flora</title>
+ <link href="http://en.mgpf.it/atom.xml" rel="self"/>
+ <link href="http://en.mgpf.it/"/>
+ <updated>2012-09-05T10:18:26+02:00</updated>
+ <id>http://en.mgpf.it/</id>
+ <author>
+   <name>Matteo Flora</name>
+   <email>io@mgpf.it</email>
+ </author>
+ 
+</feed>

@@ -1,0 +1,6 @@
+auto: false
+server: false
+server_port: 3000
+pygments: false
+lsi: false
+markdown: kramdown

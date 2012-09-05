@@ -1,0 +1,12 @@
+---
+layout: lost
+title: "I got lost!"
+meta: 
+tags: 
+- about-me
+---
+## I got lost!
+If you happen to be here the content you were looking for is utterly lost in cyperspace. **Please, forgive it.**  
+It you think it was REALLY important [drop me an email](/whoami.html).  
+  
+Grazie mille (italian for Thanks)!

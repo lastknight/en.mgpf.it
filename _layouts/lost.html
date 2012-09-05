@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h2 id="intro">{{ page.title }}</h2>
+<article class="post">
+{{ content }}
+</article>
+<h2 id="intro">List of all {{ site.posts.size }} posts in Archive</h2>
+<div class="post">
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> <i>({{ post.date | date: "%m/%d/%Y"  }})</i>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% include comments.html %}
