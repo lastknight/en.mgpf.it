@@ -1,0 +1,3 @@
+apt-get install update
+apt-get install upgrade
+apt-get install build-essential
